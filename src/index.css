@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg: 7 11 24; --fg: 226 232 240; --muted: 148 163 184; --accent: 34 211 238; --accent2: 139 92 246; }
+[data-theme="light"] { --bg: 246 248 252; --fg: 15 23 42; --muted: 71 85 105; --accent: 8 145 178; --accent2: 109 40 217; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-bg font-sans text-fg antialiased; overflow-x: hidden; }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background: rgb(var(--accent2) / .6); border-radius: 8px; }
+:focus-visible { outline: 2px solid rgb(var(--accent)); outline-offset: 3px; }
+
+@layer components {
+  .glass { background: rgb(var(--fg) / .05); border: 1px solid rgb(var(--fg) / .1); backdrop-filter: blur(14px); }
+  .section { @apply mx-auto max-w-6xl px-5 py-24 sm:px-8; }
+  .h2 { @apply font-display text-3xl font-bold sm:text-4xl; }
+  .btn { @apply inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition duration-300 hover:-translate-y-0.5; }
+  .btn-primary { @apply btn bg-gradient-to-r from-accent to-accent2 text-white shadow-lg shadow-accent2/30 hover:shadow-accent/40; }
+  .btn-ghost { @apply btn glass hover:border-accent/60; }
+  .tag { @apply rounded-full bg-accent/10 px-2.5 py-1 text-xs font-medium text-accent; }
+}
+
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .animate-float { animation: none; }
+}
