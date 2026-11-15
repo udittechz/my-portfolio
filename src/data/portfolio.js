@@ -11,13 +11,13 @@ export const personal = {
   tagline: "I turn ideas into clean, working software.",
   intro: "College student building web apps and data-driven tools with Python, JavaScript and Streamlit.",
   goals: "I want to grow into a full-stack developer who builds practical AI-powered products.",
-  photo: "\profile.jpeg", // put your photo in /public and change this, e.g. "/me.jpg"
+  photo: "/profile.jpeg", // put your photo in /public and change this, e.g. "/me.jpg"
   resume: "", // e.g. "/resume.pdf" (file placed in /public). Empty hides the Resume button.
   siteTitleShort: "Udit",
 };
 
 export const about = {
-  photo: "C:\Coding works\portfolio\portfolio\public\projects\placeholder.jpg", // optional second photo, e.g. "/about.jpg"
+  photo: "/projects/placeholder.jpg", // optional second photo, e.g. "/about.jpg"
   paragraphs: [
     "I’m Udit Narayan Mandal, a student from Rajbiraj, Nepal, currently pursuing my B.Tech in Artificial Intelligence and Machine Learning in Tiruchirappalli, Tamil Nadu, India. I completed my higher secondary education at Arniko College, Biratnagar, Nepal, and moved to India with a clear goal—to build my future in the world of technology and AI. Coming from Nepal and adapting to a new place has taught me to be independent, open-minded, and ready to face new challenges. I’m curious about how technology can solve real-world problems, and I’m excited to learn, grow, and create something meaningful through AI and Machine Learning."
   ],
@@ -73,7 +73,7 @@ export const projects = [
     image: "",
     tech: ["Python", "Streamlit", "RDKit", "3Dmol.js", "Plotly", "ReportLab"],
     features: ["Molecule analysis with RDKit", "Interactive 3D molecule viewer", "PDF report export"],
-    github: "",
+    github:  "https://github.com/udittechz",
     live: "",
   },
   {
@@ -96,23 +96,23 @@ export const skills = {
   "Soft Skills": [{ name: "[Add a soft skill]" }],
 };
 
+
 export const contact = {
-  email: "uditmandal314@gmail.com", // shown as a mailto link when filled
-  phone: "+917782876717",
-  location: "Tiruchirappali,Tamil Nadu,Indial",
+  email: "uditmandal314@gmail.com",
+  phone: "+91 7782876717",
+  alternatePhone: "+977 9819751762, 9701503447",
+  Templocation: "Tiruchirappalli, Tamil Nadu, India",
+  permlocation: "Rajbiraj, Saptari, Nepal",
 };
+
 
 // Only platforms with a URL are shown. Add the full https:// link.
 export const socials = {
-  linkedin: "",
-  github: "",
-  instagram: "",
-  facebook: "",
-  twitter: "",
-  youtube: "",
-  leetcode: "",
-  hackerrank: "",
-  geeksforgeeks: "",
+  linkedin: "https://www.linkedin.com/in/udit-narayan-mandal-6b995044b",
+  github: "github.com/udittechz",
+  instagram: "https://www.instagram.com/mr___nawab0121?rpxt=MWxuc2g5cXVodmloaA==",
+  facebook: "https://www.facebook.com/udit.narayan.mandal.2025"
+  
 };
 
 export const navLinks = [
